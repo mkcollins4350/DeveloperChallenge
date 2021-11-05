@@ -1,0 +1,12 @@
+## The Python script "capswdev.py" runs on a Linux distro and uses /bin/env
+##    to pick a python3 executable/alias.
+##
+## capswdev.py expects a stream from STDIN and writes a stream to STDOUT. No
+##    other behaviour is expected or programmed for.
+##
+## Therefore the expected behaviour from the user is:
+##    1) File-based redirect to STDIN
+##       cat <filename> | ./capswdev.py
+##
+##    2) Text stream pushed onto STDIN
+##       ./capswdev.py < TEXT_STREAM
